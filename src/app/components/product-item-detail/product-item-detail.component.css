@@ -1,0 +1,22 @@
+.product-detail_container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;  
+  margin: 0 auto;
+}
+.product-detail_image img {
+  width: 320px;
+  height: 480px
+}
+.product-detail_information {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.product-detail_name {
+  font-size: 26px;
+}
+
+.row {
+  margin-bottom: 20px;
+}

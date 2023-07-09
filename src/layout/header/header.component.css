@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+  background: #33B5E5;
+  color: #fff;
+  padding: 12px;
+}
+
+.navbar {
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

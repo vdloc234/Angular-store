@@ -1,0 +1,21 @@
+.cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1024px;
+  margin: 20px auto;
+}
+
+.product-display {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-form {
+  flex-basis: 45%;
+}
+
+.empty-cart {
+  text-align: center;
+}

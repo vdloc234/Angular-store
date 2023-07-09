@@ -1,0 +1,22 @@
+.cart-product-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.cart-product_img {
+  width: 120px;
+  height: 132px;
+}
+
+.cart-product_name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-product_price {
+  font-style: italic;
+}
+
+.cart-product_quantity input {
+  width: 80px;
+}

@@ -1,0 +1,27 @@
+<div class="cart-product-wrapper mb-3">
+  <img class="cart-product_img" src="{{ productInCart.url }}" />
+  <div class="cart-product_info">
+    <div class="cart-product_name mb-2">
+      {{ productInCart.name }}
+    </div>
+    <div class="cart-product_price mb-2">
+      $ Price: {{ productInCart.price }}
+    </div>
+    <div class="cart-product_quantity mb-2">
+      Amount:
+      <input
+        type="number"
+        [value]="productInCart.quantity"
+        (change)="onChangeQuantity(productInCart.id, $event)"
+      />
+    </div>
+    <div class="button-wrapper mb-2">
+      <button
+        (click)="onDeleteItem(productInCart.id)"
+        class="btn btn-warning btn-sm"
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>

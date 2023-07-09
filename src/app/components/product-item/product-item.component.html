@@ -1,0 +1,23 @@
+<div class="product-detail">
+  <a routerLink="product-detail/{{ product.id }}">
+    <img class="product-image" src="{{ product.url }}" />
+  </a>
+  <div class="mt5">
+    <b>{{ product.name }}</b>
+  </div>
+  <div class="mt5">$ {{ product.price }}</div>
+
+  <form class="mt5" (ngSubmit)="onAddItem($event)">
+    <select
+      class="form-select"
+      name="option"
+      [(ngModel)]="quantityOfProduct"
+      (ngModelChange)="onChangeOptions($event)"
+    >
+      <option *ngFor="let option of quantityOptions">
+        {{ option }}
+      </option>
+    </select>
+    <input type="submit" value="Add to cart" class="btn btn-primary mt5" />
+  </form>
+</div>

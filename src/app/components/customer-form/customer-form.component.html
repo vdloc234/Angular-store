@@ -1,0 +1,48 @@
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <div class="checkout-header">Checkout Information</div>
+  <div class="form-row">
+    <label for="fullName">Full Name: </label>
+    <input
+      type="text"
+      name="fullName"
+      required
+      minlength="3"
+      placeholder="Minimum 3 charaters"
+      [(ngModel)]="fullName"
+      (ngModelChange)="onFullNameChange($event)"
+    />
+  </div>
+  <div class="form-row">
+    <label for="address">Address: </label>
+    <input
+      type="text"
+      name="address"
+      required
+      minlength="6"
+      placeholder="Minimum 6 charaters"
+      [(ngModel)]="address"
+      (ngModelChange)="onAddressChange($event)"
+    />
+  </div>
+  <div class="form-row">
+    <label for="creditCard">Credit Card Number: </label>
+    <input
+      type="text"
+      name="creditCard"
+      required
+      minlength="16"
+      maxlength="16"
+      placeholder="(16-digit number)"
+      [(ngModel)]="creditCard"
+      (ngModelChange)="onCreditCardChange($event)"
+    />
+    <span class="error-field" [innerText]="creditCardErrorMsg"></span>
+  </div>
+
+  <input
+    [disabled]="form.invalid || !!creditCardErrorMsg"
+    type="submit"
+    value="Submit"
+    class="btn btn-primary"
+  />
+</form>

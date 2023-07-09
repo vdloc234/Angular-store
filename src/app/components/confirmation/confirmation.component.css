@@ -1,0 +1,15 @@
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation-title {
+  font-weight: bolder;
+  font-size: 32px;
+  color:aqua;
+  text-align: center;
+}
+
+.confirmation-row {
+  padding: 4px 0;
+}

@@ -1,0 +1,13 @@
+
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product-wrapper {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+}

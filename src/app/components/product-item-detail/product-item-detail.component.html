@@ -1,0 +1,24 @@
+<div class="product-detail_container mt-5">
+  <div class="product-detail_image"><img src="{{ product.url }}" /></div>
+  <div class="product-detail_information">
+    <div class="product-detail_name row">{{ product.name }}</div>
+    <div class="row">{{ product.price }}</div>
+    <div class="row">{{ product.description }}</div>
+    <div class="row">
+      <select
+        [(ngModel)]="quantityOfProduct"
+        (ngModelChange)="onChangeOptions($event)"
+      >
+        <option *ngFor="let option of quantityOptions">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <button class="btn btn-primary mt5" (click)="onAddItem($event)">
+      Add to cart
+    </button>
+    <div class="mt-3">
+      <a routerLink="/"> &larr;Back to the products page.</a>
+    </div>
+  </div>
+</div>
